@@ -70,10 +70,12 @@
   padding-bottom: 25px;
   margin-top: 55px; }
   .footer-menu {
-    margin: 0 auto; }
+    margin: 0 auto 50px; }
     .footer-menu__item {
       display: inline-block;
       vertical-align: middle; }
+  .footer__copyright {
+    text-align: center; }
 
 body {
   font-family: 'Open Sans', sans-serif; }

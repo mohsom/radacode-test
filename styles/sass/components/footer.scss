@@ -3,10 +3,14 @@
   padding-bottom: 25px;
   margin-top: 55px;
   &-menu {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     &__item {
       display: inline-block;
       vertical-align: middle;
     }
+  }
+
+  &__copyright {
+    text-align: center;
   }
 }
