@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  margin-top: 55px;
+  &-menu {
+    margin: 0 auto;
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

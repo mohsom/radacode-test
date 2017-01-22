@@ -8,16 +8,17 @@ html
             .container
                 header.header
                     img(src='img/logo.png' alt='eyeleo logo').header__logo
-                    ul.header-menu
-                        li.header-menu__item
-                            a(href='#') Features
-                            ._margin
-                        li.header-menu__item
-                            a(href='#') Community
-                        li.header-menu__item.header-menu__item_button
-                            a(href='#') Buy Now
+                    nav.header-menu
+                        ul
+                            li.header-menu__item
+                                a(href='#') Features
+                                ._margin
+                            li.header-menu__item
+                                a(href='#') Community
+                            li.header-menu__item.header-menu__item_button
+                                a(href='#') Buy Now
             .container
-                section.description
+                .description
                     img(src='img/eyeleo.png' alt='eyeleo').description__image
                     h1.description__title An app that keeps your eyes healthy.
                     div.description__text
@@ -25,8 +26,9 @@ html
                         | shows you simple eye exercises and prevents you from using Mac during these exercises.
                         | When you're working at a computer it's easy to forget about time. This leads to eye strain
                         | and other physical problems. EyeLeo guarantees you won't forget to take a break.
-        .container
-            section.features
+        img(src='img/arrow-top.png' alt='')
+        section.features
+            .container
                 .features-desc
                     h1.features-desc__title Features:
                     div.features-desc__text
@@ -44,11 +46,32 @@ html
                         br
                         | and more...
                 img(src='img/mac.png' alt='macbook air').features__image
-        .container
-            section.buy-now
-                img(src='img/logo-big.png' alt='logo big').buy-now__image
-                a(href='#').buy-now__link Buy Now
+        section.buy-now
+            .container
+                div
+                    img(src='img/logo-big.png' alt='logo big').buy-now__image
+                    a(href='#').buy-now__link Buy Now
         section.bottom
-            footer.footer
+            footer.footer._gradient-background
+                .container
+                    nav.footer-menu
+                        ul
+                            li.footer-menu__item
+                                a(href='#') About Us
+                            ._margin1
+                            li.footer-menu__item
+                                a(href='#') Contact Us
+                            ._margin1
+                            li.footer-menu__item
+                                a(href='#')
+                                    img(src='img/fb.png' alt='facebook')
+                            ._margin1
+                            li.footer-menu__item
+                                a(href='#')
+                                    img(src='img/gp.png' alt='google plus')
+                            ._margin1
+                            li.footer-menu__item
+                                a(href='#')
+                                    img(src='img/tw.png' alt='twitter')
         //scripts
         include jade-includes/js-include

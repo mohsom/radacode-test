@@ -2,23 +2,15 @@
   padding-top: 30px;
   clear: both;
   &__logo {
-    display: inline-block;
     float: left;
-    vertical-align: middle;
   }
 
   &-menu {
-    display: inline-block;
     float: right;
-    font-size: 18px;
-    vertical-align: middle;
+    margin-top: 10px;
     &__item {
       display: inline-block;
       vertical-align: middle;
-      a {
-        text-decoration: none;
-        color: #000;
-      }
       &_button {
         margin-left: 60px;
         a {
