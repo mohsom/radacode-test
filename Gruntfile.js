@@ -128,35 +128,6 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 }
             }
-        },
-        validation: {
-            files: {
-                src: ['*.html']
-            }
-        },
-        scsslint: {
-            allFiles: [
-                'styles/sass/*.scss'
-            ],
-            options: {
-                bundleExec: true,
-                config: '.scss-lint.yml',
-                reporterOutput: 'scss-lint-report.xml',
-                colorizeOutput: true
-            }
-        },
-        imagemin: {
-            dynamic: {
-                options: {
-                    optimizationLevel: 7
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'img/',
-                    src: ['**/*.{png,jpg,jpeg}'],
-                    dest: 'build/img'
-                }]
-            }
         }
     });
 
@@ -167,12 +138,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-scss-lint');
-    grunt.loadNpmTasks('grunt-html-validation');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-jade');
-    grunt.registerTask('build', ['clean:build', 'sass','jade', 'cssmin', 'htmlmin' ,'copy','uglify', 'imagemin']);
+    grunt.registerTask('build', ['clean:build', 'sass','jade', 'cssmin', 'htmlmin' ,'copy','uglify']);
     grunt.registerTask('serve', ['jade','sass', 'connect', 'watch']);
-    grunt.registerTask('valid', ['validation','scsslint']);
 };
