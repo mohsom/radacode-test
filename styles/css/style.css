@@ -53,6 +53,17 @@
     right: 0;
     top: 60px; }
 
+.buy-now {
+  margin-top: 20px;
+  background: #f5f9f7; }
+  .buy-now .buy-now__link {
+    font-size: 31px;
+    font-weight: 300;
+    background: #347a51;
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #000; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
   body .container {
