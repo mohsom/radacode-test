@@ -1,47 +1,7 @@
 @import "_var";
+@import "common";
 //components
 @import "components/main";
 @import "components/features.scss";
 @import "components/buy-now.scss";
 @import "components/bottom";
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  .container {
-    max-width: 100%;
-    width: 960px;
-    margin: 0 auto;
-  }
-  ._margin {
-    display: inline-block;
-    width: 95px;
-  }
-  ._margin1{
-    display: inline-block;
-    width: 60px;
-  }
-  ._margin2{
-    display: inline-block;
-    width: 85px;
-  }
-  .clear {
-    clear: both;
-  }
-  ._gradient-background {
-    background-image: -webkit-gradient(linear, 0 0, 962 0, from(#247445), color-stop(0.049, #367f49), color-stop(0.05, #3a7e49), color-stop(0.099, #47894e), color-stop(0.134, #519050), color-stop(0.134, #548f52), color-stop(0.162, #589653), color-stop(0.183, #5e9a54), color-stop(0.183, #619955), color-stop(0.319, #83b360), color-stop(0.319, #80b460), color-stop(0.542, #99c368), color-stop(0.698, #84b461), color-stop(0.698, #81b561), color-stop(0.701, #84b360), color-stop(0.862, #5b9553), color-stop(0.909, #4e8b4e), color-stop(0.955, #3b8349), color-stop(0.955, #3f824b), color-stop(0.993, #2e7b47), color-stop(0.993, #327a47), to(#2e7946));
-    background-image: -webkit-linear-gradient(360deg, #247445, #367f49 4.9%, #3a7e49 5%, #47894e 9.9%, #519050 13.4%, #548f52 13.4%, #589653 16.2%, #5e9a54 18.3%, #619955 18.3%, #83b360 31.9%, #80b460 31.9%, #99c368 54.2%, #84b461 69.8%, #81b561 69.8%, #84b360 70.1%, #5b9553 86.2%, #4e8b4e 90.9%, #3b8349 95.5%, #3f824b 95.5%, #2e7b47 99.3%, #327a47 99.3%, #2e7946);
-    background-image: -moz-linear-gradient(360deg, #247445, #367f49 4.9%, #3a7e49 5%, #47894e 9.9%, #519050 13.4%, #548f52 13.4%, #589653 16.2%, #5e9a54 18.3%, #619955 18.3%, #83b360 31.9%, #80b460 31.9%, #99c368 54.2%, #84b461 69.8%, #81b561 69.8%, #84b360 70.1%, #5b9553 86.2%, #4e8b4e 90.9%, #3b8349 95.5%, #3f824b 95.5%, #2e7b47 99.3%, #327a47 99.3%, #2e7946);
-    background-image: -o-linear-gradient(360deg, #247445, #367f49 4.9%, #3a7e49 5%, #47894e 9.9%, #519050 13.4%, #548f52 13.4%, #589653 16.2%, #5e9a54 18.3%, #619955 18.3%, #83b360 31.9%, #80b460 31.9%, #99c368 54.2%, #84b461 69.8%, #81b561 69.8%, #84b360 70.1%, #5b9553 86.2%, #4e8b4e 90.9%, #3b8349 95.5%, #3f824b 95.5%, #2e7b47 99.3%, #327a47 99.3%, #2e7946);
-    background-image: linear-gradient(90deg, #247445, #367f49 4.9%, #3a7e49 5%, #47894e 9.9%, #519050 13.4%, #548f52 13.4%, #589653 16.2%, #5e9a54 18.3%, #619955 18.3%, #83b360 31.9%, #80b460 31.9%, #99c368 54.2%, #84b461 69.8%, #81b561 69.8%, #84b360 70.1%, #5b9553 86.2%, #4e8b4e 90.9%, #3b8349 95.5%, #3f824b 95.5%, #2e7b47 99.3%, #327a47 99.3%, #2e7946)
-  }
-
-  a{
-    text-decoration: none;
-    color: #000;
-  }
-
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-}
