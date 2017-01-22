@@ -5,11 +5,11 @@
 .buy-now {
   overflow: hidden;
   padding: 80px 140px 90px 80px;
-  .buy-now__image {
+  &__image {
     float: left;
   }
 
-  .buy-now__link {
+  &__link {
     margin-top: 20px;
     font-size: 31px;
     font-weight: 300;

@@ -21,7 +21,11 @@ body {
   }
   ._margin1{
     display: inline-block;
-    width: 70px;
+    width: 60px;
+  }
+  ._margin2{
+    display: inline-block;
+    width: 85px;
   }
   ._gradient-background {
     background-image: -webkit-gradient(linear, 0 0, 962 0, from(#247445), color-stop(0.049, #367f49), color-stop(0.05, #3a7e49), color-stop(0.099, #47894e), color-stop(0.134, #519050), color-stop(0.134, #548f52), color-stop(0.162, #589653), color-stop(0.183, #5e9a54), color-stop(0.183, #619955), color-stop(0.319, #83b360), color-stop(0.319, #80b460), color-stop(0.542, #99c368), color-stop(0.698, #84b461), color-stop(0.698, #81b561), color-stop(0.701, #84b360), color-stop(0.862, #5b9553), color-stop(0.909, #4e8b4e), color-stop(0.955, #3b8349), color-stop(0.955, #3f824b), color-stop(0.993, #2e7b47), color-stop(0.993, #327a47), to(#2e7946));
