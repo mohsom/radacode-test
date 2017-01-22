@@ -30,8 +30,10 @@
 
 @media(min-width: 951px) {
   .features {
-    &__desc {
+    &-desc {
       width: 510px;
+      display: block;
+      left: 0;
     }
     &__image {
       position: absolute;
@@ -44,9 +46,8 @@
 
 @media(max-width: 950px) {
   .features {
-    &__desc {
+    &-desc {
       width: 100%;
-
     }
     &__image {
       display: block;
