@@ -2,8 +2,6 @@
   position: relative;
   padding-left: 22px;
   padding-right: 22px; }
-  .main .header-block {
-    padding: 0 20px 0 20px; }
   .main .header {
     padding-top: 30px; }
     .main .header__logo {
@@ -27,16 +25,32 @@
     padding-top: 45px;
     font-weight: 300;
     padding-bottom: 35px; }
-    .main .description__title {
-      font-size: 35px;
-      margin: 10px 0 45px 120px; }
-    .main .description__image {
-      margin-left: 60px; }
-    .main .description__text {
-      text-align: center;
-      line-height: 1.3;
-      font-size: 22px; }
 
+@media (min-width: 721px) {
+  .header-block {
+    padding: 0 20px 0 20px; }
+
+  .description__title {
+    font-size: 35px;
+    margin: 10px 0 45px 120px; }
+  .description__image {
+    margin-left: 60px; }
+  .description__text {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 22px; } }
+@media (max-width: 720px) {
+  .description {
+    margin: 0 auto; }
+    .description__title {
+      display: block;
+      margin: 0 auto 10px auto; }
+    .description__image {
+      display: block;
+      margin: 0 auto 10px auto; }
+    .description__text {
+      line-height: 1.3;
+      font-size: 22px; } }
 .features-block {
   margin-top: 50px;
   background: #f5f9f7; }
@@ -145,5 +159,8 @@ body {
   body a {
     text-decoration: none;
     color: #000; }
+  body img {
+    max-width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=style.css.map */

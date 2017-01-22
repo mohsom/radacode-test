@@ -2,9 +2,6 @@
   position: relative;
   padding-left: 22px;
   padding-right: 22px;
-  .header-block {
-    padding: 0 20px 0 20px;
-  }
   .header {
     padding-top: 30px;
     &__logo {
@@ -36,6 +33,16 @@
     padding-top: 45px;
     font-weight: 300;
     padding-bottom: 35px;
+  }
+}
+
+//responsive
+@media(min-width: 721px) {
+  .header-block {
+    padding: 0 20px 0 20px;
+  }
+
+  .description {
     &__title {
       font-size: 35px;
       margin: 10px 0 45px 120px;
@@ -44,9 +51,27 @@
     &__image {
       margin-left: 60px;
     }
-
     &__text {
       text-align: center;
+      line-height: 1.3;
+      font-size: 22px;
+    }
+  }
+}
+
+@media(max-width: 720px) {
+  .description {
+    margin: 0 auto;
+    &__title {
+      display: block;
+     margin: 0 auto 10px auto;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    &__text {
       line-height: 1.3;
       font-size: 22px;
     }
