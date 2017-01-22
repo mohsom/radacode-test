@@ -1,7 +1,9 @@
 .features {
-  position: relative;
   background: #f5f9f7;
   padding: 50px 0;
+  div {
+    position: relative;
+  }
   &-desc {
     width: 510px;
     text-align: center;

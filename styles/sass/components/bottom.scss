@@ -1,0 +1,21 @@
+.bottom {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    margin-top: 55px;
+    &-menu {
+      margin-bottom: 50px;
+      text-align: center;
+      &__item {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    }
+
+    &__copyright {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.main {
+  position: relative;
+  padding-left: 22px;
+  padding-right: 22px;
+  .header {
+    padding-top: 30px;
+    clear: both;
+    &__logo {
+      float: left;
+    }
+
+    &-menu {
+      float: right;
+      margin-top: 10px;
+      font-weight: 400;
+      &__item {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        &_button {
+          margin-left: 60px;
+          a {
+            padding: 7px 30px;
+            border: 3px solid #000;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    clear: both;
+    padding-top: 45px;
+    font-weight: 300;
+    padding-bottom: 35px;
+    &__title {
+      font-size: 35px;
+    }
+
+    &__text {
+      text-align: center;
+      line-height: 1.3;
+      font-size: 22px;
+    }
+  }
+}
