@@ -4,6 +4,48 @@ html
         title Test task
         include jade-includes/head
     body
-
+        section.main._gradient-background
+            .container
+                header.header
+                    img(src='img/logo.png' alt='eyeleo logo').header__logo
+                    ul.header-menu
+                        li.header-menu__item
+                            a(href='#') Features
+                            ._margin
+                        li.header-menu__item
+                            a(href='#') Community
+                        li.header-menu__item.header-menu__item_button
+                            a(href='#') Buy Now
+            .container
+                section.description
+                    img(src='img/eyeleo.png' alt='eyeleo').description__image
+                    h1.description__title An app that keeps your eyes healthy.
+                    div.description__text
+                        | EyeLeo for Mac is an app that regulary reminds you to take a rest for your eyes,
+                        | shows you simple eye exercises and prevents you from using Mac during these exercises.
+                        | When you're working at a computer it's easy to forget about time. This leads to eye strain
+                        | and other physical problems. EyeLeo guarantees you won't forget to take a break.
+        .container
+            section.features
+                .features-desc
+                    h1.features-desc__title Features:
+                    div.features-desc__text
+                        | Screen blocking during break exercises.
+                        br
+                        | Short break with eye exercises.
+                        br
+                        | Visual explanation of every exercise.
+                        br
+                        | Notifications announcing a long break coming.
+                        br
+                        | Strict mode that doesn't allow skipping the breaks.
+                        br
+                        | Customizable preferences.
+                        br
+                        | and more...
+                img(src='img/mac.png' alt='macbook air').features__image
+        section.buy-now
+        section.bottom
+            footer.footer
         //scripts
         include jade-includes/js-include

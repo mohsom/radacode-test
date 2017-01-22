@@ -1,464 +1,74 @@
-.main-block {
-  margin: 0 auto;
-  max-width: 100%; }
-  .main-block .header {
-    color: #fff;
-    background: #0f1e3f;
-    width: 100%;
-    height: 37px;
-    font-weight: 600;
-    padding-top: 7px;
-    font-size: 15px; }
-    .main-block .header__adress {
+.header {
+  padding-top: 30px;
+  clear: both; }
+  .header__logo {
+    display: inline-block;
+    float: left;
+    vertical-align: middle; }
+  .header-menu {
+    display: inline-block;
+    float: right;
+    font-size: 18px;
+    vertical-align: middle; }
+    .header-menu__item {
       display: inline-block;
-      vertical-align: middle;
-      float: left;
-      margin-top: 7px;
-      padding-left: 30px; }
-    .main-block .header__phone {
-      display: inline-block;
-      vertical-align: middle;
-      float: right;
-      text-align: right;
-      padding-right: 30px; }
-      .main-block .header__phone a {
-        text-decoration: underline;
-        color: #fff;
-        transition: all 0.1s; }
-        .main-block .header__phone a:hover {
-          text-decoration: none;
-          transition: all 0.1s; }
-  .main-block .banner {
-    min-height: 275px;
-    background: white;
-    padding-top: 50px; }
-    .main-block .banner__logo {
-      margin: 0 auto;
-      width: 700px;
-      max-width: 100%;
-      height: auto;
-      text-align: center; }
-      .main-block .banner__logo img {
-        display: block;
-        margin: 0 auto 20px auto;
-        max-width: 100%;
-        width: 200px;
-        height: auto; }
-      .main-block .banner__logo .__title {
-        display: block;
-        font-size: 30px;
-        font-weight: 600;
-        color: #0f1e3f;
-        font-family: "Times New Roman", sans-serif; }
-    .main-block .banner__title {
-      text-align: center;
-      font-size: 40px;
-      color: #25080C;
-      text-transform: uppercase; }
-    .main-block .banner .menu {
-      max-width: 100%; }
-      .main-block .banner .menu ul {
-        display: block;
-        width: 600px;
-        max-width: 100%;
-        margin: 55px auto 0 auto; }
-        .main-block .banner .menu ul li {
-          display: inline-block;
-          cursor: pointer;
-          text-transform: uppercase;
-          font-size: 14px;
-          position: relative; }
-          .main-block .banner .menu ul li a {
-            display: block;
-            padding: 9px 18px 11px 18px; }
-          .main-block .banner .menu ul li span {
-            color: #000; }
-          .main-block .banner .menu ul li .submenu {
-            text-transform: none;
-            background: #fff;
-            position: absolute;
-            top: 34px;
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
-            width: 200px;
-            z-index: 999; }
-            .main-block .banner .menu ul li .submenu a {
-              display: block;
-              border-bottom: 1px solid #000;
-              padding-left: 5px;
-              padding-top: 5px;
-              padding-bottom: 5px;
-              color: #000; }
-              .main-block .banner .menu ul li .submenu a:hover {
-                background: #0f1e3f;
-                color: #fff; }
-          .main-block .banner .menu ul li:hover {
-            background: #0f1e3f; }
-            .main-block .banner .menu ul li:hover span {
-              color: #fff; }
-    .main-block .banner__line {
-      width: 100%;
-      height: 20px;
-      background: #0f1e3f; }
-
-@media (min-width: 1100px) {
-  .big-menu .menu {
-    width: 1100px; }
-
-  .practice-areas .row {
-    margin-bottom: 20px; }
-    .practice-areas .row ._margin {
-      display: inline-block;
-      vertical-align: middle;
-      width: 26px; }
-    .practice-areas .row .area {
-      display: inline-block;
-      vertical-align: text-top;
-      width: 220px;
-      max-width: 100%; } }
-@media (min-width: 550px) {
-  .big-menu .menu ul li {
-    margin-left: 25px;
-    margin-right: 25px; }
-
-  .main-block .banner .menu ul li .submenu {
-    display: block; }
-  .main-block .banner .menu ul li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.2s; } }
-@media (max-width: 549px) {
-  .big-menu .menu {
-    width: 240px; }
-    .big-menu .menu ul li {
-      margin: 0 auto 10px auto; }
-
-  .main-block .banner .menu ul li {
-    display: block;
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
-    border-top: 1px solid #193268; }
-    .main-block .banner .menu ul li .submenu {
-      display: none; }
-
-  .slider {
-    display: none; } }
-@media (max-width: 1099px) and (min-width: 550px) {
-  .big-menu .menu {
-    width: 550px; } }
-@media (max-width: 1099px) {
-  .practice-areas .row ._margin {
-    display: none; }
-  .practice-areas .row .area {
-    display: block;
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto 10px auto; }
-
-  ._title {
-    text-align: center; } }
-._title {
-  display: block;
-  font-size: 30px;
-  padding-top: 50px;
-  margin-bottom: 30px;
-  color: #0f1e3f;
-  font-weight: 600;
-  border-bottom: 1px solid #FFAE35; }
-
-._content-box {
-  display: block;
-  width: 100%;
-  background: #fff; }
-
-._article-box {
-  display: block;
-  max-width: 730px;
-  margin: 0 auto;
-  padding: 0 10px 60px 10px; }
-
-._no-hover {
-  pointer-events: none; }
-
-._centered {
-  margin: auto; }
-
-.footer-block .footer {
-  padding-top: 20px;
-  border-top: 20px solid #0f1e3f;
-  background: #fff;
-  text-align: center;
-  color: #0f1e3f;
-  font-size: 14px;
-  line-height: 1.1;
-  padding-bottom: 20px; }
-  .footer-block .footer ._disclaimer {
-    font-size: 12px; }
-  .footer-block .footer .boxing {
-    font-size: 12px; }
-    .footer-block .footer .boxing img {
-      width: 100px;
-      height: 100px; }
-
-.bx-viewport {
-  border: none !important;
-  left: 0 !important; }
-
-.bx-pager {
-  bottom: 20px !important; }
-
-.slider {
-  height: 500px;
-  background: #fff; }
-  .slider .bx-slider {
-    background: #fff;
-    margin: 0;
-    padding: 0; }
-    .slider .bx-slider li {
-      height: 500px;
-      background-position: top center;
-      text-align: right; }
-      .slider .bx-slider li .cont {
-        float: right; }
-        .slider .bx-slider li .cont .__title {
-          color: #FFAE35;
-          font-weight: 600;
-          font-size: 32px;
-          padding-bottom: 20px;
-          margin-right: 50px;
-          padding-top: 50px;
-          width: 500px;
-          max-width: 100%; }
-        .slider .bx-slider li .cont .__hr-big {
-          width: 100px;
-          float: right;
-          margin-right: 50px;
-          border-bottom: 5px solid #0f1e3f; }
-        .slider .bx-slider li .cont .__desc {
-          padding-right: 50px;
-          padding-top: 20px;
-          font-size: 20px;
-          line-height: 1.2;
-          color: #f2f2f2;
-          width: 500px;
-          max-width: 100%; }
-    .slider .bx-slider li[data-slide='1'] {
-      background: url("../../img/s1.jpg");
-      background-size: cover; }
-      .slider .bx-slider li[data-slide='1'] .__desc {
+      vertical-align: middle; }
+      .header-menu__item a {
+        text-decoration: none;
         color: #000; }
-      .slider .bx-slider li[data-slide='1'] .__title {
-        color: #0f1e3f; }
-    .slider .bx-slider li[data-slide='2'] {
-      background: url("../../img/s2.jpg");
-      background-size: cover; }
-      .slider .bx-slider li[data-slide='2'] .__desc {
-        color: #000; }
-      .slider .bx-slider li[data-slide='2'] .__title {
-        color: #0f1e3f; }
-    .slider .bx-slider li[data-slide='3'] {
-      background: url("../../img/s3.jpg");
-      background-size: cover; }
-      .slider .bx-slider li[data-slide='3'] .__title {
-        color: #fff; }
-      .slider .bx-slider li[data-slide='3'] .__hr-big {
-        border-bottom-color: #FFAE35; }
-      .slider .bx-slider li[data-slide='3'] .__desc {
-        color: #fff; }
+      .header-menu__item_button {
+        margin-left: 60px; }
+        .header-menu__item_button a {
+          padding: 7px 30px;
+          border: 3px solid #000;
+          text-align: center; }
 
-.contact-form {
-  -webkit-box-shadow: inset 10px 94px 111px -6px white;
-  -moz-box-shadow: inset 10px 94px 111px -6px white;
-  box-shadow: inset 10px 94px 111px -6px white;
-  border-top: 20px solid #0f1e3f;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .contact-form__title {
+.description {
+  clear: both;
+  padding-top: 45px;
+  font-weight: 300; }
+  .description__title {
+    font-size: 35px; }
+  .description__text {
     text-align: center;
-    color: #0f1e3f;
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 10px; }
-  .contact-form .form {
-    max-width: 100%;
-    width: 400px;
-    margin: 10px auto 0 auto; }
-    .contact-form .form form input[type='email'], .contact-form .form form input[type="text"] {
-      display: block;
-      width: 380px;
-      max-width: 90%;
-      height: 50px;
-      border: 3px solid #0f1e3f;
-      padding: 10px;
-      margin: 0 auto 10px auto;
-      transition: all 0.1s; }
-      .contact-form .form form input[type='email']:focus, .contact-form .form form input[type="text"]:focus {
-        outline-width: 0;
-        border: 3px solid #FFAE35;
-        transition: all 0.1s; }
-    .contact-form .form form textarea {
-      display: block;
-      width: 380px;
-      max-width: 90%;
-      height: 200px;
-      border: 3px solid #0f1e3f;
-      padding: 10px;
-      margin: 0 auto 10px auto;
-      resize: none;
-      transition: all 0.1s; }
-      .contact-form .form form textarea:focus {
-        outline-width: 0;
-        border: 3px solid #FFAE35;
-        transition: all 0.1s; }
-    .contact-form .form form input[type='submit'] {
-      display: block;
-      width: 300px;
-      max-width: 100%;
-      height: 50px;
-      background: #0f1e3f;
-      color: #fff;
-      font-weight: 600;
-      border: none;
-      margin: 0 auto;
-      transition: all 0.1s; }
-      .contact-form .form form input[type='submit']:focus {
-        outline-width: 0; }
-      .contact-form .form form input[type='submit']:hover {
-        color: #0f1e3f;
-        background: #fff;
-        transition: all 0.1s; }
-      .contact-form .form form input[type='submit']:disabled {
-        cursor: default;
-        pointer-events: none;
-        opacity: 0.5; }
+    line-height: 1.4;
+    font-size: 22px; }
 
-.overview {
-  border-top: 20px solid #0f1e3f;
-  background: #fff;
-  padding-bottom: 50px; }
-  .overview .overview-box {
-    line-height: 1.3;
-    margin: 0 auto;
-    width: 960px;
-    max-width: 100%; }
-    .overview .overview-box .overview-text .practice-areas .row {
-      display: block; }
-      .overview .overview-box .overview-text .practice-areas .row .area .__title {
-        text-align: left;
-        font-size: 20px;
-        font-weight: 600; }
-        .overview .overview-box .overview-text .practice-areas .row .area .__title a {
-          color: #0f1e3f; }
-          .overview .overview-box .overview-text .practice-areas .row .area .__title a:hover {
-            color: #2d5aba; }
-      .overview .overview-box .overview-text .practice-areas .row .area .__content {
-        margin-top: 10px;
-        line-height: 1.3; }
-
-.thanks .message {
-  line-height: 1.2; }
-  .thanks .message a {
-    text-decoration: underline; }
-
-.big-menu {
-  border-top: 20px solid #0f1e3f;
-  width: 100%;
-  min-height: 315px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  -webkit-box-shadow: inset 10px -92px 111px -6px white;
-  -moz-box-shadow: inset 10px -92px 111px -6px white;
-  box-shadow: inset 10px -92px 111px -6px white; }
-  .big-menu .menu {
-    max-width: 100%;
-    margin: 0 auto; }
-    .big-menu .menu ul li {
-      display: inline-block;
-      width: 220px; }
-      .big-menu .menu ul li img {
-        display: block;
-        width: 220px;
-        height: 220px;
-        border-radius: 220px;
-        border: 5px solid #0f1e3f;
-        margin: 0 auto 20px auto;
-        -webkit-filter: grayscale(100%);
-        transition: all 0.1s; }
-      .big-menu .menu ul li span {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 20px;
-        color: #0f1e3f;
-        font-weight: 600; }
-      .big-menu .menu ul li:hover img {
-        -webkit-filter: grayscale(0%);
-        transition: all 0.1s; }
-
-.links-container {
-  min-height: 500px;
-  line-height: 1.2; }
-  .links-container .links {
-    list-style: disc; }
-    .links-container .links li {
-      display: list-item;
-      margin-bottom: 10px;
-      margin-left: 17px; }
-      .links-container .links li a {
-        color: #0f1e3f;
-        text-decoration: underline; }
-        .links-container .links li a:hover {
-          text-decoration: none; }
-
-.contact {
-  min-height: 500px;
-  line-height: 1.2; }
-  .contact .map {
-    width: 100%;
-    margin-top: 10px; }
-  .contact p .contacts {
-    max-width: 100%;
-    text-align: left; }
-
-.article .article-content {
-  line-height: 1.5; }
-  .article .article-content img {
-    max-width: 100%;
-    height: auto; }
-.article ol {
-  display: block;
-  margin-left: 17px;
-  list-style: disc;
-  line-height: 1.5; }
-
-.article-content .__att-image {
-  margin-bottom: 10px; }
-
-.faq a {
-  text-decoration: underline;
-  color: #0f1e3f; }
-  .faq a:hover {
-    text-decoration: none; }
+.features {
+  position: relative;
+  background: #f5f9f7;
+  padding: 50px 0; }
+  .features-desc {
+    width: 510px;
+    text-align: center;
+    font-weight: 300; }
+    .features-desc__title {
+      font-size: 33px; }
+    .features-desc__text {
+      margin-top: 40px;
+      font-size: 22px;
+      line-height: 1.3; }
+  .features__image {
+    position: absolute;
+    right: 0;
+    top: 60px; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  text-align: justify; }
-  body .body-wrapper {
-    width: 1920px;
-    max-width: 100%;
+  font-family: 'Open Sans', sans-serif; }
+  body .container {
+    max-width: 960px;
     margin: 0 auto;
-    background-size: cover;
-    background: url("../../img/bg3.png") fixed top center;
-    background-size: cover; }
-  body .__hr {
-    margin-top: 10px;
-    width: 100px;
-    border-bottom: 3px solid #FFAE35; }
-  body a {
-    text-decoration: none; }
-  body i {
-    font-style: italic !important; }
+    padding: 0 23px; }
+  body ._margin {
+    display: inline-block;
+    width: 100px; }
+  body ._gradient-background {
+    background-image: -webkit-gradient(linear, 0 0, 965 0, from(#277645), color-stop(0.002, #287545), color-stop(0.002, #247645), color-stop(0.006, #2a7645), color-stop(0.008, #257746), color-stop(0.01, #2a7645), color-stop(0.012, #287745), color-stop(0.032, #2e7947), color-stop(0.032, #2d7a45), color-stop(0.035, #317946), color-stop(0.036, #2d7a47), color-stop(0.065, #337d48), color-stop(0.065, #367d49), color-stop(0.069, #357e47), color-stop(0.08, #397f49), color-stop(0.08, #378048), color-stop(0.086, #3b7f4a), color-stop(0.09, #39814a), color-stop(0.093, #39814a), color-stop(0.095, #3c804a), color-stop(0.14, #43864d), color-stop(0.143, #43874b), color-stop(0.143, #46864d), color-stop(0.151, #44884c), color-stop(0.154, #47874d), color-stop(0.156, #46884c), color-stop(0.159, #48884e), color-stop(0.159, #45894c), color-stop(0.16, #47894e), color-stop(0.194, #4f8c4e), color-stop(0.194, #4c8d50), color-stop(0.2, #4f8c50), color-stop(0.206, #4d8e4f), color-stop(0.214, #518e4f), color-stop(0.214, #4e8f50), color-stop(0.218, #528f50), color-stop(0.231, #519050), color-stop(0.231, #539052), color-stop(0.235, #529150), color-stop(0.238, #559050), color-stop(0.238, #529151), color-stop(0.251, #559351), color-stop(0.273, #589452), color-stop(0.273, #5a9454), color-stop(0.281, #599552), color-stop(0.336, #619955), color-stop(0.345, #609b55), color-stop(0.349, #629a55), color-stop(0.41, #669f57), color-stop(0.411, #689e57), color-stop(0.412, #669f57), color-stop(0.429, #699f57), color-stop(0.429, #67a058), color-stop(0.468, #6ca158), color-stop(0.469, #6ba359), color-stop(0.47, #6ca159), color-stop(0.474, #6ba358), color-stop(0.475, #6ca158), color-stop(0.477, #6ca159), color-stop(0.478, #6ba358), color-stop(0.479, #6ca158), color-stop(0.488, #6ca159), color-stop(0.489, #6ba358), color-stop(0.516, #6ea359), color-stop(0.561, #6da559), color-stop(0.565, #6ea35a), color-stop(0.565, #6da559), color-stop(0.568, #6ea359), color-stop(0.568, #6da55a), color-stop(0.574, #6ea359), color-stop(0.574, #6da559), color-stop(0.589, #6ea359), color-stop(0.589, #6da55a), color-stop(0.59, #6ea359), color-stop(0.644, #6da359), color-stop(0.644, #6aa359), color-stop(0.645, #6da359), color-stop(0.659, #6ba358), color-stop(0.661, #6ca159), color-stop(0.662, #6ba359), color-stop(0.665, #6ca159), color-stop(0.665, #6ba358), color-stop(0.666, #6ca159), color-stop(0.671, #69a358), color-stop(0.672, #6ca158), color-stop(0.674, #6ca158), color-stop(0.675, #69a358), color-stop(0.676, #6ca158), color-stop(0.713, #67a058), color-stop(0.814, #5f9955), color-stop(0.816, #609856), color-stop(0.816, #5e9854), color-stop(0.817, #609856), color-stop(0.835, #5d9753), color-stop(0.836, #5e9655), color-stop(0.838, #5b9753), color-stop(0.839, #5c9655), color-stop(0.859, #599552), color-stop(0.865, #5a9454), color-stop(0.865, #579552), color-stop(0.868, #5a9452), color-stop(0.872, #599352), color-stop(0.872, #569452), color-stop(0.873, #599352), color-stop(0.874, #569452), color-stop(0.875, #599352), color-stop(0.882, #559351), color-stop(0.882, #579253), color-stop(0.883, #559352), color-stop(0.884, #579251), color-stop(0.891, #549251), color-stop(0.892, #569151), color-stop(0.901, #529150), color-stop(0.901, #539052), color-stop(0.91, #519050), color-stop(0.911, #528f52), color-stop(0.926, #518e4f), color-stop(0.926, #4e8f50), color-stop(0.932, #4f8e4f), color-stop(0.932, #508d50), color-stop(0.943, #4e8d4e), color-stop(0.943, #4f8c50), color-stop(0.948, #4d8c50), color-stop(0.949, #4b8c4e), color-stop(0.95, #4e8b4e), color-stop(0.957, #4c8a4f), color-stop(0.958, #498b4d), color-stop(0.96, #4a8a4f), color-stop(0.961, #498b4d), color-stop(0.977, #48884e), color-stop(0.982, #45894e), color-stop(0.983, #48884e), color-stop(0.987, #45874e), color-stop(0.988, #44884c), color-stop(0.989, #47874d), color-stop(0.99, #44884c), color-stop(0.993, #46864d), to(#43864d));
+    background-image: -webkit-linear-gradient(360deg, #277645, #287545 0.2%, #247645 0.2%, #2a7645 0.6%, #257746, #2a7645, #287745 1.2%, #2e7947 3.2%, #2d7a45 3.2%, #317946 3.5%, #2d7a47 3.6%, #337d48 6.5%, #367d49 6.5%, #357e47 6.9%, #397f49 8%, #378048 8%, #3b7f4a 8.6%, #39814a 9%, #39814a 9.3%, #3c804a 9.5%, #43864d 14%, #43874b 14.3%, #46864d 14.3%, #44884c 15.1%, #47874d 15.4%, #46884c 15.6%, #48884e 15.9%, #45894c 15.9%, #47894e 16%, #4f8c4e 19.4%, #4c8d50 19.4%, #4f8c50, #4d8e4f 20.6%, #518e4f 21.4%, #4e8f50 21.4%, #528f50 21.8%, #519050 23.1%, #539052 23.1%, #529150 23.5%, #559050 23.8%, #529151 23.8%, #559351 25.1%, #589452 27.3%, #5a9454 27.3%, #599552 28.1%, #619955 33.6%, #609b55 34.5%, #629a55 34.9%, #669f57 41%, #689e57, #669f57 41.2%, #699f57 42.9%, #67a058 42.9%, #6ca158 46.8%, #6ba359, #6ca159 47%, #6ba358 47.4%, #6ca158 47.5%, #6ca159 47.7%, #6ba358, #6ca158 47.9%, #6ca159 48.8%, #6ba358 48.9%, #6ea359 51.6%, #6da559 56.1%, #6ea35a 56.5%, #6da559 56.5%, #6ea359 56.8%, #6da55a 56.8%, #6ea359 57.4%, #6da559 57.4%, #6ea359 58.9%, #6da55a 58.9%, #6ea359 59%, #6da359 64.4%, #6aa359 64.4%, #6da359 64.5%, #6ba358 65.9%, #6ca159 66.1%, #6ba359 66.2%, #6ca159 66.5%, #6ba358 66.5%, #6ca159 66.6%, #69a358 67.1%, #6ca158 67.2%, #6ca158 67.4%, #69a358, #6ca158 67.6%, #67a058 71.3%, #5f9955 81.4%, #609856 81.6%, #5e9854 81.6%, #609856 81.7%, #5d9753 83.5%, #5e9655 83.6%, #5b9753 83.8%, #5c9655 83.9%, #599552 85.9%, #5a9454 86.5%, #579552 86.5%, #5a9452 86.8%, #599352 87.2%, #569452 87.2%, #599352, #569452, #599352 87.5%, #559351 88.2%, #579253 88.2%, #559352, #579251 88.4%, #549251 89.1%, #569151 89.2%, #529150 90.1%, #539052 90.1%, #519050 91%, #528f52 91.1%, #518e4f 92.6%, #4e8f50 92.6%, #4f8e4f 93.2%, #508d50 93.2%, #4e8d4e 94.3%, #4f8c50 94.3%, #4d8c50 94.8%, #4b8c4e, #4e8b4e 95%, #4c8a4f 95.7%, #498b4d 95.8%, #4a8a4f 96%, #498b4d 96.1%, #48884e 97.7%, #45894e 98.2%, #48884e 98.3%, #45874e 98.7%, #44884c, #47874d, #44884c 99%, #46864d 99.3%, #43864d);
+    background-image: -moz-linear-gradient(360deg, #277645, #287545 0.2%, #247645 0.2%, #2a7645 0.6%, #257746, #2a7645, #287745 1.2%, #2e7947 3.2%, #2d7a45 3.2%, #317946 3.5%, #2d7a47 3.6%, #337d48 6.5%, #367d49 6.5%, #357e47 6.9%, #397f49 8%, #378048 8%, #3b7f4a 8.6%, #39814a 9%, #39814a 9.3%, #3c804a 9.5%, #43864d 14%, #43874b 14.3%, #46864d 14.3%, #44884c 15.1%, #47874d 15.4%, #46884c 15.6%, #48884e 15.9%, #45894c 15.9%, #47894e 16%, #4f8c4e 19.4%, #4c8d50 19.4%, #4f8c50, #4d8e4f 20.6%, #518e4f 21.4%, #4e8f50 21.4%, #528f50 21.8%, #519050 23.1%, #539052 23.1%, #529150 23.5%, #559050 23.8%, #529151 23.8%, #559351 25.1%, #589452 27.3%, #5a9454 27.3%, #599552 28.1%, #619955 33.6%, #609b55 34.5%, #629a55 34.9%, #669f57 41%, #689e57, #669f57 41.2%, #699f57 42.9%, #67a058 42.9%, #6ca158 46.8%, #6ba359, #6ca159 47%, #6ba358 47.4%, #6ca158 47.5%, #6ca159 47.7%, #6ba358, #6ca158 47.9%, #6ca159 48.8%, #6ba358 48.9%, #6ea359 51.6%, #6da559 56.1%, #6ea35a 56.5%, #6da559 56.5%, #6ea359 56.8%, #6da55a 56.8%, #6ea359 57.4%, #6da559 57.4%, #6ea359 58.9%, #6da55a 58.9%, #6ea359 59%, #6da359 64.4%, #6aa359 64.4%, #6da359 64.5%, #6ba358 65.9%, #6ca159 66.1%, #6ba359 66.2%, #6ca159 66.5%, #6ba358 66.5%, #6ca159 66.6%, #69a358 67.1%, #6ca158 67.2%, #6ca158 67.4%, #69a358, #6ca158 67.6%, #67a058 71.3%, #5f9955 81.4%, #609856 81.6%, #5e9854 81.6%, #609856 81.7%, #5d9753 83.5%, #5e9655 83.6%, #5b9753 83.8%, #5c9655 83.9%, #599552 85.9%, #5a9454 86.5%, #579552 86.5%, #5a9452 86.8%, #599352 87.2%, #569452 87.2%, #599352, #569452, #599352 87.5%, #559351 88.2%, #579253 88.2%, #559352, #579251 88.4%, #549251 89.1%, #569151 89.2%, #529150 90.1%, #539052 90.1%, #519050 91%, #528f52 91.1%, #518e4f 92.6%, #4e8f50 92.6%, #4f8e4f 93.2%, #508d50 93.2%, #4e8d4e 94.3%, #4f8c50 94.3%, #4d8c50 94.8%, #4b8c4e, #4e8b4e 95%, #4c8a4f 95.7%, #498b4d 95.8%, #4a8a4f 96%, #498b4d 96.1%, #48884e 97.7%, #45894e 98.2%, #48884e 98.3%, #45874e 98.7%, #44884c, #47874d, #44884c 99%, #46864d 99.3%, #43864d);
+    background-image: -o-linear-gradient(360deg, #277645, #287545 0.2%, #247645 0.2%, #2a7645 0.6%, #257746, #2a7645, #287745 1.2%, #2e7947 3.2%, #2d7a45 3.2%, #317946 3.5%, #2d7a47 3.6%, #337d48 6.5%, #367d49 6.5%, #357e47 6.9%, #397f49 8%, #378048 8%, #3b7f4a 8.6%, #39814a 9%, #39814a 9.3%, #3c804a 9.5%, #43864d 14%, #43874b 14.3%, #46864d 14.3%, #44884c 15.1%, #47874d 15.4%, #46884c 15.6%, #48884e 15.9%, #45894c 15.9%, #47894e 16%, #4f8c4e 19.4%, #4c8d50 19.4%, #4f8c50, #4d8e4f 20.6%, #518e4f 21.4%, #4e8f50 21.4%, #528f50 21.8%, #519050 23.1%, #539052 23.1%, #529150 23.5%, #559050 23.8%, #529151 23.8%, #559351 25.1%, #589452 27.3%, #5a9454 27.3%, #599552 28.1%, #619955 33.6%, #609b55 34.5%, #629a55 34.9%, #669f57 41%, #689e57, #669f57 41.2%, #699f57 42.9%, #67a058 42.9%, #6ca158 46.8%, #6ba359, #6ca159 47%, #6ba358 47.4%, #6ca158 47.5%, #6ca159 47.7%, #6ba358, #6ca158 47.9%, #6ca159 48.8%, #6ba358 48.9%, #6ea359 51.6%, #6da559 56.1%, #6ea35a 56.5%, #6da559 56.5%, #6ea359 56.8%, #6da55a 56.8%, #6ea359 57.4%, #6da559 57.4%, #6ea359 58.9%, #6da55a 58.9%, #6ea359 59%, #6da359 64.4%, #6aa359 64.4%, #6da359 64.5%, #6ba358 65.9%, #6ca159 66.1%, #6ba359 66.2%, #6ca159 66.5%, #6ba358 66.5%, #6ca159 66.6%, #69a358 67.1%, #6ca158 67.2%, #6ca158 67.4%, #69a358, #6ca158 67.6%, #67a058 71.3%, #5f9955 81.4%, #609856 81.6%, #5e9854 81.6%, #609856 81.7%, #5d9753 83.5%, #5e9655 83.6%, #5b9753 83.8%, #5c9655 83.9%, #599552 85.9%, #5a9454 86.5%, #579552 86.5%, #5a9452 86.8%, #599352 87.2%, #569452 87.2%, #599352, #569452, #599352 87.5%, #559351 88.2%, #579253 88.2%, #559352, #579251 88.4%, #549251 89.1%, #569151 89.2%, #529150 90.1%, #539052 90.1%, #519050 91%, #528f52 91.1%, #518e4f 92.6%, #4e8f50 92.6%, #4f8e4f 93.2%, #508d50 93.2%, #4e8d4e 94.3%, #4f8c50 94.3%, #4d8c50 94.8%, #4b8c4e, #4e8b4e 95%, #4c8a4f 95.7%, #498b4d 95.8%, #4a8a4f 96%, #498b4d 96.1%, #48884e 97.7%, #45894e 98.2%, #48884e 98.3%, #45874e 98.7%, #44884c, #47874d, #44884c 99%, #46864d 99.3%, #43864d);
+    background-image: linear-gradient(90deg, #277645, #287545 0.2%, #247645 0.2%, #2a7645 0.6%, #257746, #2a7645, #287745 1.2%, #2e7947 3.2%, #2d7a45 3.2%, #317946 3.5%, #2d7a47 3.6%, #337d48 6.5%, #367d49 6.5%, #357e47 6.9%, #397f49 8%, #378048 8%, #3b7f4a 8.6%, #39814a 9%, #39814a 9.3%, #3c804a 9.5%, #43864d 14%, #43874b 14.3%, #46864d 14.3%, #44884c 15.1%, #47874d 15.4%, #46884c 15.6%, #48884e 15.9%, #45894c 15.9%, #47894e 16%, #4f8c4e 19.4%, #4c8d50 19.4%, #4f8c50, #4d8e4f 20.6%, #518e4f 21.4%, #4e8f50 21.4%, #528f50 21.8%, #519050 23.1%, #539052 23.1%, #529150 23.5%, #559050 23.8%, #529151 23.8%, #559351 25.1%, #589452 27.3%, #5a9454 27.3%, #599552 28.1%, #619955 33.6%, #609b55 34.5%, #629a55 34.9%, #669f57 41%, #689e57, #669f57 41.2%, #699f57 42.9%, #67a058 42.9%, #6ca158 46.8%, #6ba359, #6ca159 47%, #6ba358 47.4%, #6ca158 47.5%, #6ca159 47.7%, #6ba358, #6ca158 47.9%, #6ca159 48.8%, #6ba358 48.9%, #6ea359 51.6%, #6da559 56.1%, #6ea35a 56.5%, #6da559 56.5%, #6ea359 56.8%, #6da55a 56.8%, #6ea359 57.4%, #6da559 57.4%, #6ea359 58.9%, #6da55a 58.9%, #6ea359 59%, #6da359 64.4%, #6aa359 64.4%, #6da359 64.5%, #6ba358 65.9%, #6ca159 66.1%, #6ba359 66.2%, #6ca159 66.5%, #6ba358 66.5%, #6ca159 66.6%, #69a358 67.1%, #6ca158 67.2%, #6ca158 67.4%, #69a358, #6ca158 67.6%, #67a058 71.3%, #5f9955 81.4%, #609856 81.6%, #5e9854 81.6%, #609856 81.7%, #5d9753 83.5%, #5e9655 83.6%, #5b9753 83.8%, #5c9655 83.9%, #599552 85.9%, #5a9454 86.5%, #579552 86.5%, #5a9452 86.8%, #599352 87.2%, #569452 87.2%, #599352, #569452, #599352 87.5%, #559351 88.2%, #579253 88.2%, #559352, #579251 88.4%, #549251 89.1%, #569151 89.2%, #529150 90.1%, #539052 90.1%, #519050 91%, #528f52 91.1%, #518e4f 92.6%, #4e8f50 92.6%, #4f8e4f 93.2%, #508d50 93.2%, #4e8d4e 94.3%, #4f8c50 94.3%, #4d8c50 94.8%, #4b8c4e, #4e8b4e 95%, #4c8a4f 95.7%, #498b4d 95.8%, #4a8a4f 96%, #498b4d 96.1%, #48884e 97.7%, #45894e 98.2%, #48884e 98.3%, #45874e 98.7%, #44884c, #47874d, #44884c 99%, #46864d 99.3%, #43864d); }
+  body ._grey {
+    background: #f5f9f7; }
 
 /*# sourceMappingURL=style.css.map */

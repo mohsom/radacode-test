@@ -1,0 +1,14 @@
+.description {
+  clear: both;
+  padding-top: 45px;
+  font-weight: 300;
+  &__title {
+      font-size: 35px;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 22px;
+  }
+}
