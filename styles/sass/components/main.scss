@@ -65,7 +65,7 @@
       &__text {
         text-align: center;
         line-height: 1.3;
-        font-size: 22px;
+        font-size: $regular-text-size;
       }
     }
   }
@@ -112,7 +112,7 @@
     }
     &__text {
       line-height: 1.3;
-      font-size: 22px;
+      font-size: $regular-text-size;
     }
   }
 }
@@ -157,7 +157,7 @@
       }
       &__text {
         line-height: 1.3;
-        font-size: 22px;
+        font-size: $regular-text-size;
       }
     }
   }

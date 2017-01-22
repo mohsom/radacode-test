@@ -1,6 +1,6 @@
 .features-block {
   margin-top: 50px;
-  background: #f5f9f7;
+  background: $grey;
 }
 
 .features {
@@ -18,7 +18,7 @@
 
     &__text {
       margin-top: 40px;
-      font-size: 22px;
+      font-size: $regular-text-size;
       line-height: 1.3;
     }
   }
