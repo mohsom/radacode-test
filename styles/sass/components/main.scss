@@ -8,6 +8,15 @@
       font-weight: 400;
       &__item {
         font-size: 18px;
+        transition: all 0.1s;
+        a:hover {
+          color: #fff;
+        }
+        &_button {
+          a:hover {
+            border: 3px solid #fff;
+          }
+        }
         &_button {
           a {
             padding: 7px 30px;

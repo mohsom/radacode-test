@@ -3,6 +3,12 @@
     margin-top: 55px;
     &-menu {
       text-align: center;
+      &__item {
+        transition: all 0.1s;
+        a:hover {
+          color: #fff;
+        }
+      }
     }
 
     &__copyright {
