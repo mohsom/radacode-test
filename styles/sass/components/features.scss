@@ -9,6 +9,8 @@
     width: 510px;
     text-align: center;
     font-weight: 300;
+    z-index: 2;
+    position: relative;
     &__title {
       font-size: 33px;
     }
@@ -23,5 +25,6 @@
     position: absolute;
     right: 0;
     top: 35px;
+    z-index: 1;
   }
 }

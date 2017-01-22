@@ -47,7 +47,9 @@
   .features-desc {
     width: 510px;
     text-align: center;
-    font-weight: 300; }
+    font-weight: 300;
+    z-index: 2;
+    position: relative; }
     .features-desc__title {
       font-size: 33px; }
     .features-desc__text {
@@ -57,7 +59,8 @@
   .features__image {
     position: absolute;
     right: 0;
-    top: 35px; }
+    top: 35px;
+    z-index: 1; }
 
 .buy-now-block {
   margin-top: 20px;
