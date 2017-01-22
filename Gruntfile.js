@@ -20,9 +20,6 @@ module.exports = function (grunt) {
                 files: {
                     'build/js/script.js': [
                         'js/script.js'
-                    ],
-                    'build/js/offline-disable.js': [
-                        'js/offline-disable.js'
                     ]
                 }
             }
@@ -33,7 +30,8 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: [
-                            'bower_components/**'
+                            'bower_components/**',
+                            'img/**'
                         ],
                         dest: 'build/'
                     }
