@@ -75,7 +75,8 @@
       display: inline-block;
       vertical-align: middle; }
   .footer__copyright {
-    text-align: center; }
+    text-align: center;
+    font-size: 18px; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
