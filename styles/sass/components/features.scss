@@ -2,11 +2,12 @@
   margin-top: 50px;
   background: #f5f9f7;
 }
+
 .features {
   padding: 25px 0 45px;
   position: relative;
   &-desc {
-    width: 510px;
+    max-width: 100%;
     text-align: center;
     font-weight: 300;
     z-index: 2;
@@ -22,9 +23,34 @@
     }
   }
   &__image {
-    position: absolute;
-    right: 0;
-    top: 35px;
-    z-index: 1;
+  }
+}
+
+//responsive
+
+@media(min-width: 951px) {
+  .features {
+    &__desc {
+      width: 510px;
+    }
+    &__image {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      z-index: 1;
+    }
+  }
+}
+
+@media(max-width: 950px) {
+  .features {
+    &__desc {
+      width: 100%;
+
+    }
+    &__image {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

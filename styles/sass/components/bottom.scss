@@ -1,6 +1,5 @@
 .footer-block {
   .footer {
-    padding: 40px 140px 25px 140px;
     margin-top: 55px;
     &-menu {
       text-align: center;
@@ -16,5 +15,17 @@
       text-align: center;
       font-size: 18px;
     }
+  }
+}
+
+//responsive
+@media (min-width: 951px) {
+  .footer {
+    padding: 40px 140px 25px 140px;
+  }
+}
+@media(max-width: 950px) {
+  .footer {
+      padding: 40px 0 25px;
   }
 }
