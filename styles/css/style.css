@@ -190,6 +190,8 @@ img {
   font-weight: 300;
   background: #347a51;
   padding: 13px 25px; }
+  .buy-now__link:hover {
+    color: #fff; }
 
 @media (min-width: 951px) {
   .buy-now {
