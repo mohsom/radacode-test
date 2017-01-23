@@ -4,9 +4,10 @@ html
         title Test task
         include jade-includes/head
     body
-        include components/main
-        include components/features
-        include components/buy-now
+        .page-wrap
+            include components/main
+            include components/features
+            include components/buy-now
         include components/bottom
         //scripts
         include jade-includes/js-include

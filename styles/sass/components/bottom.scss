@@ -21,8 +21,27 @@
 
 //responsive
 @media (min-width: 951px) {
+  html, body {
+    height: 100%;
+  }
+
+  .page-wrap {
+    min-height: 100%;
+    margin-bottom: -180px;
+  }
+
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .footer, .page-wrap:after {
+    height: 180px;
+  }
+  
   .footer {
     padding: 40px 140px 25px 140px;
+    position: relative;
+    bottom: 0;
     &-menu {
       &__item {
         display: inline-block;
