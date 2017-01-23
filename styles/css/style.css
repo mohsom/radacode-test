@@ -316,7 +316,7 @@ img {
       .footer-block .footer-menu__item a:hover {
         color: #fff; }
   .footer-block .footer__copyright {
-    margin-top: 40px;
+    margin-top: 45px;
     text-align: center;
     font-size: 18px; }
 
@@ -326,14 +326,14 @@ img {
 
   .page-wrap {
     min-height: 100%;
-    margin-bottom: -180px; }
+    margin-bottom: -100px; }
 
   .page-wrap:after {
     content: "";
     display: block; }
 
   .footer, .page-wrap:after {
-    height: 180px; }
+    height: 100px; }
 
   .footer {
     padding: 40px 140px 25px 140px;
