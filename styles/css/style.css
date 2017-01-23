@@ -58,7 +58,9 @@ img {
     clear: both;
     padding-top: 45px;
     font-weight: 300;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    position: relative;
+    z-index: 2; }
 
 @media (min-width: 721px) {
   .main {
@@ -144,6 +146,104 @@ img {
       .main .description__text {
         line-height: 1.3;
         font-size: 22px; } }
+.lapki {
+  position: absolute;
+  width: 400px;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+  .lapki .lapka-1 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 60px;
+    top: 60px;
+    transform: rotate(20deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.7s; }
+  .lapki .lapka-2 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 120px;
+    top: 120px;
+    transform: rotate(40deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1.4s; }
+  .lapki .lapka-3 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 180px;
+    top: 180px;
+    transform: rotate(60deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2.1s; }
+  .lapki .lapka-4 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    right: 160px;
+    top: 240px;
+    transform: rotate(80deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2.8s; }
+  .lapki .lapka-5 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    right: 200px;
+    top: 300px;
+    transform: rotate(100deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3.5s; }
+  .lapki .lapka-6 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    right: 240px;
+    top: 360px;
+    transform: rotate(120deg);
+    z-index: 999;
+    background: url("../../img/lapka.png");
+    animation: lapka 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 4.2s; }
+
+@keyframes lapka {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@media (max-width: 980px) {
+  .lapki {
+    display: none; } }
+@media (min-width: 981px) {
+  .lapki {
+    display: block; } }
 .features-block {
   margin-top: 50px;
   background: #f5f9f7; }
